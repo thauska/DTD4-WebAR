@@ -35,7 +35,7 @@
                   <strong>1 | </strong>Please open the AR-DEMO in an up-to-date web browser (optimally: Google Chrome (just Android), Safari (iOS 11), Firefox, Microsoft Edge and Opera).
                 </p>
                 <p class="text-body1">
-                  <strong>2 | </strong>After forwarding to the START AR, please release device camera and focus with it the black picture frame. Here we go!
+                  <strong>2 | </strong>After forwarding to the START AR, please release device camera and focus with it the picture frame. Here we go!
                 </p>
                 <p class="text-body1">
                   <strong>3 | </strong>Closing the WebAR DEMO completely removes the application (PWA) from your device. Set a bookmark, the PWA remains operable, even offline.
