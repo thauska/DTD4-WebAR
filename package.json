@@ -1,6 +1,6 @@
 {
   "name": "datatechday-ar",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "AR app for Data Tech Day",
   "productName": "Data Tech Day AR",
   "cordovaId": "org.cordova.quasar.app",

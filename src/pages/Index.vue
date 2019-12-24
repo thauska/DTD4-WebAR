@@ -1,31 +1,50 @@
 <template>
-  <q-page class="container scene">
-    <a-scene
-      arjs="patternRatio:0.90; sourceType: webcam; trackingMethod: best; debugUIEnabled: false; maxDetectionRate: 30; canvasWidth: 240; canvasHeight: 180"
-      vr-mode-ui="enabled: false"
-    >
-      <a-anchor id="marker" type="pattern" url="statics/pattern/pattern-DTD.patt">
-        <a-box scale="1.5 1.5 1.5" position="0 0.5 0" material="opacity: 0.5; side: double;color:purple;">
-          <a-torus-knot
-            radius="0.26"
-            radius-tubular="0.05"
-            animation="property: rotation; to:360 0 0; dur: 5000; easing: linear; loop: true"
-          ></a-torus-knot>
-        </a-box>
-      </a-anchor>
-      <a-entity camera></a-entity>
-    </a-scene>
+<q-page-container>
+  <q-page padding class="flex justify-center">
+    <div class="q-pa-md">
+      <div class="column items-center">
+        <div class="col q-mb-sm">
+          <img alt="Data Tech Day logo" src="statics/images/dtd.png" width="150px" >
+        </div>
+        <div class="col q-pt-md">
+          <p class="text-h4 text-bold text-black text-center">Realidade Aumentada na Web</p>
+        </div>
+        <div class="col text-justify">
+          <p class="text-body1">Para instrução de utilização, clique no botão<q-btn flat round dense icon="info" />da barra de navegação.</p>
+        </div>
+        <div class="col q-pa-md">
+          <q-btn color="dark" glossy
+            class="q-mt-xs text-no-wrap"
+            push
+            label="Iniciar realidade aumentada"
+            @click="routeModify()"/>
+        </div>
+      </div>
+    </div>
   </q-page>
+</q-page-container>
 </template>
 
 <script>
 export default {
-  name: 'PageIndex'
+  name: 'PageIndex',
+  methods: {
+    routeModify () {
+      this.$router.push({ name: 'aframe' })
+    }
+  }
 }
 </script>
 
-<style>
-.scene {
-  z-index: 100 !important;
+<style scoped>
+@media (min-width: 768px) {
+  .text-h4 {
+    font-size: 2rem
+  }
+}
+@media (max-width: 768px) {
+  .text-h4 {
+    font-size: 1.8rem
+  }
 }
 </style>

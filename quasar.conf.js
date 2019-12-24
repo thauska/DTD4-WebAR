@@ -72,7 +72,14 @@ module.exports = function (ctx) {
             formatter: require('eslint').CLIEngine.getFormatter('stylish')
           }
         })
+      },
+      env: ctx.dev 
+      ? {
+        VERSION_DTD4: JSON.stringify(require('./package.json').version)
       }
+      : {
+        VERSION_DTD4: JSON.stringify(require('./package.json').version)
+      },
     },
 
     // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-devServer
