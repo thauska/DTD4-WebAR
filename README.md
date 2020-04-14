@@ -2,6 +2,8 @@
 
 AR app for Data Tech Day
 
+[Slides presentation](https://slides.com/thayanamamore/dtd4/fullscreen)
+
 ## Install the dependencies
 ```bash
 yarn
