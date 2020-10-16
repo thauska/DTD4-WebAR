@@ -11,6 +11,9 @@
       "dev": {
         "pwa": {
           "iconHash": "ade9f06dfd1c496068fd265bbc48081a"
+        },
+        "spa": {
+          "iconHash": "ade9f06dfd1c496068fd265bbc48081a"
         }
       },
       "build": {
